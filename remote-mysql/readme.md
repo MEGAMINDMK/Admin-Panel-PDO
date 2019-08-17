@@ -1,8 +1,8 @@
- <?php
-$db_host = "wno-host.ddns.net"; // your remote domain or ip
-$db_user = "megamind";
-$db_pass = "pakarmy";
-$db_name = "gsb_status";
+
+$db_host = "some.com"; // your remote domain or ip
+$db_user = "player";
+$db_pass = "random";
+$db_name = "pubg";
 $db_port = "3306"; // 3306 for mysql
 
 // Create connection
@@ -13,4 +13,4 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully";
-?> 
+
