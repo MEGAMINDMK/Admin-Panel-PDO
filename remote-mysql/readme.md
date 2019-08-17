@@ -1,16 +1,16 @@
+To test remote connection try below script<br>
+$db_host = "some.com"; // your remote domain or ip<br>
+$db_user = "player";<br>
+$db_pass = "random";<br>
+$db_name = "pubg";<br>
+$db_port = "3306"; // 3306 for mysql<br>
 
-$db_host = "some.com"; // your remote domain or ip
-$db_user = "player";
-$db_pass = "random";
-$db_name = "pubg";
-$db_port = "3306"; // 3306 for mysql
+// Create connection<br>
+$conn = mysqli_connect($db_host,$db_user,$db_pass,$db_name, $db_port);<br>
 
-// Create connection
-$conn = mysqli_connect($db_host,$db_user,$db_pass,$db_name, $db_port);
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+// Check connection<br>
+if (!$conn) {<br>
+    die("Connection failed: " . mysqli_connect_error());<br>
+}<br>
 echo "Connected successfully";
 
