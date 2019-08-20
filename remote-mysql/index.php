@@ -113,7 +113,7 @@ else {
 echo "Incorrect Password!";
 exit;}
 // store connection info...
-$connection=mysqli_connect("localhost","root","$mysqlRootPass");
+$connection=mysqli_connect("localhost:3306","root","$mysqlRootPass");
 // check connection...
 if (mysqli_connect_errno())
   {
